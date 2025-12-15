@@ -3,5 +3,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import ru.MarkMoskvitin.Timedome.back.entity.User;
 
 public interface UserRepository extends JpaRepository<User,Long> {
-
+    User findByUsername(String username);
 }
